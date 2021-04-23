@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BOOKING</title>
+	<style>
+		.a:hover
+		{
+			color: red;
+		}
+		.b
+		{
+			padding-left: 200px;
+			padding-right: 200px;
+			border-radius: 40px;
+		}
+		.a
+		{
+			padding-left: 97px;
+			padding-right: 97px;
+			padding-top: 8px;
+			padding-bottom: 8px;
+		}
+		th
+		{
+			background-color: green;
+		}
+		.c
+		{
+			border-radius: 40px;
+		}
+		.d
+		{
+			border-collapse: collapse;
+			padding-bottom: 10px;
+			padding-left: 20px;
+			padding-top: 10px;
+			padding-right: 20px;
+		}
+		.m
+		{
+			background-color: black;
+			color: white;
+			padding-top: 5px;
+			padding-bottom: 5px;
+			display: block;
+			width: 100%;
+			overflow: hidden;
+			height: 30px;
+		}
+		.call
+		{
+			color: white;
+		}
+		.k
+		{
+			padding-bottom: 8px;
+			padding-right: 20px;
+			padding-top: 8px;
+			padding-left: 20px;
+			font-weight: bold;
+			font-size: 15px;
+		}
+	</style>
+	<script>
+		function fun1()
+		{
+			document.getElementById('aid').value=101;
+			document.getElementById('tc').value=1000;
+			document.getElementById('s').value=200000;
+		}
+		function fun2()
+		{
+			document.getElementById('aid').value=102;
+			document.getElementById('tc').value=800;
+			document.getElementById('s').value=150000;
+		}
+		function fun3()
+		{
+			document.getElementById('aid').value=103;
+			document.getElementById('tc').value=300;
+			document.getElementById('s').value=100000;
+		}
+		function fun4()
+		{
+			if(document.getElementById("aid").value=="")
+			{
+				alert("please select anyone auditorium id");
+				document.getElementById("aid").focus();
+				return false;
+			}
+			if (document.getElementById('date').value=="") 
+			{
+				alert("select one date");
+				document.getElementById('date').focus();
+				return false;
+			}
+			if(document.getElementById("time").value=="")
+			{
+				alert("please select anyone Timing");
+				document.getElementById("time").focus();
+				return false;
+			}
+			if(document.getElementById("event").value=="")
+			{
+				alert("write the name of the event");
+				document.getElementById("event").focus();
+				return false;
+			}
+			if(document.getElementById("aid").value!=""&&document.getElementById("date").value!=""&&document.getElementById("time").value!=""&&document.getElementById("event").value!="")
+			{
+				alert("Your booking details goes to admin.");
+				return false;
+			}
+			return true;
+		}
+	</script>
+</head>
+<body bgcolor="brown">
+	<div class="m">
+		<footer class="m">
+			<span style="font-size: 15px;">
+				&nbsp;&nbsp;&nbsp;&nbsp;
+				<a href="https://web.whatsapp.com/" class="call">
+					&#9742;
+				</a>
+				&nbsp;&nbsp;:&nbsp;&nbsp;
+				<a href="https://web.whatsapp.com/" class="call">
+				+91 8178675901
+				</a>
+				&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;
+				<a href="https://www.google.com/gmail/" class="call">
+					&#9993;
+				</a>
+				&nbsp;&nbsp;:&nbsp;&nbsp;
+				<a href="https://www.google.com/gmail/" class="call">   				
+					dprinceakshat9@gmail.com
+				</a>
+   			</span>
+		</footer>
+	</div>
+	<h1 align="center">
+		<font color="cyan">WELCOME TO AUDITORIUM BOOKING SYSTEM</font> 
+	</h1>
+	<hr>
+	<p align="center">
+		<a href="booking.html">
+			<button onclick="Booking" class="a">
+				<b>Booking</b>
+			</button>
+		</a>
+		<a href="viewbooking.html">
+			<button onclick="View Booking" class="a">
+				<b>View Booking</b>
+			</button>
+		</a>
+		<a href="gallery.html">
+			<button onclick="gallery" class="a">
+				<b>Gallery</b>
+			</button>
+		</a>
+		<a href="home.html">
+			<button onclick="Logout" class="a">
+				<b>Logout</b>
+			</button>
+		</a>
+	</p>
+<center>
+	<img src="auditorium.jpg" width="1090" height="400" border="2"/>
+</center>
+<center>
+	<form method="get">
+		<table bgcolor="white" class="c">
+	<tr>
+		<td class="b">
+			<p align="center">
+				<b>AUDITORIUM BOOKING REQUEST</b>
+			</p>
+			<br>
+			<table border="2" class="d">
+				<tr class="d">
+					<th class="d">Auditorium ID</th>
+					<th class="d">Address</th>
+					<th class="d">Seats</th>
+					<th class="d">Cost</th>	
+					<th class="d">Select</th>	
+				</tr>
+				<tr class="d">
+					<td class="d" align="center">101</td>
+					<td class="d">SANTI DEVI MITTAL AUDITORIUM</td>
+					<td class="d">1000</td>
+					<td class="d">200000</td>
+					<td class="d"><input type="radio" name="nothing" onclick="fun1()"></td>
+				</tr>
+				<tr class="d">
+					<td class="d" align="center">102</td>
+					<td class="d">BALDEV RAJ MITTAL AUDITORIUM</td>
+					<td class="d">800</td>
+					<td class="d">150000</td>
+					<td class="d"><input type="radio" name="nothing" onclick="fun2()"></td>
+				</tr>
+				<tr class="d">
+					<td class="d" align="center">103</td>
+					<td class="d">UNI POLIS</td>
+					<td class="d">300</td>
+					<td class="d">100000</td>
+					<td class="d"><input type="radio" name="nothing" onclick="fun3()"></td>
+				</tr>
+			</table>
+		</form>
+			<br>
+			<form onsubmit="return(fun4());">
+			<center>
+				<label> Auditorium ID: </label>
+				<input type="text" id="aid">
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<br>
+				<br>
+				<label> Total Cost: </label>
+				<input type="text" id="tc">
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<br><br>
+				<label> Seats: </label>
+				<input type="text" id="s">
+				&nbsp;
+				<br><br>
+				<label> Date: </label>
+				<input type="date" id="date">
+				<br><br>
+				<label> Event Name: </label>
+				<input type="text" id="event">
+				<br><br>
+				<label> Timing: </label>
+				<select>
+					<option id="time">9am to 12pm</option>
+					<option id="time">2pm to 5pm</option>
+					<option id="time">7pm to 10pm</option>
+				</select>
+				<br><br><br>
+				<button class="k">BOOK</button>
+				<br><br><br>
+		    </center>
+		    </form>
+		</td>
+	</tr>
+</table>
+</center>
+<br><br><br>
+<div class="m">
+	<footer class="m">
+	<span style="font-size: 15px;">
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		&copy;2019 
+		<a href="home.html">
+			www.seminarhall.com
+		</a>
+		ALL RIGHTS RESERVED
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		DESIGNED AND DEVELOPED BY AKSHAT PAREEK
+	</span>
+</footer>
+</div>
+</body>
+</html>

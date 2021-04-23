@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AUDITORIUM DETAILS</title>
+	<style>
+		.a:hover
+		{
+			color: red;
+		}
+		.b
+		{
+			padding-left: 330px;
+			padding-right: 330px;
+			border-radius: 40px;
+		}
+		.a
+		{
+			padding-left: 97px;
+			padding-right: 97px;
+			padding-top: 8px;
+			padding-bottom: 8px;
+		}
+		th
+		{
+			background-color: green;
+		}
+		.c
+		{
+			border-radius: 40px;
+		}
+		.d
+		{
+			border-collapse: collapse;
+			padding-bottom: 10px;
+			padding-left: 20px;
+			padding-top: 10px;
+			padding-right: 20px;
+		}
+		.m
+		{
+			background-color: black;
+			color: white;
+			padding-top: 5px;
+			padding-bottom: 5px;
+			display: block;
+			width: 100%;
+			overflow: hidden;
+			height: 30px;
+		}
+		.call
+		{
+			color: white;
+		}
+		.k
+		{
+			padding-bottom: 8px;
+			padding-right: 20px;
+			padding-top: 8px;
+			padding-left: 20px;
+			font-weight: bold;
+			font-size: 15px;
+		}
+	</style>
+	<script>
+		function fun4()
+		{
+			if(document.getElementById('aid').value=="")
+			{
+				alert("enter the auditorium ID");
+				document.getElementById('aid').focus();
+				return false;
+			}
+			if(document.getElementById('ad').value=="")
+			{
+				alert("enter Address");
+				document.getElementById('ad').focus();
+				return false;
+			}
+			if(document.getElementById('s').value=="")
+			{
+				alert("enter the no of seats");
+				document.getElementById('s').focus();
+				return false;
+			}
+			if(document.getElementById('p').value=="")
+			{
+				alert("enter the Price");
+				document.getElementById('p').focus();
+				return false;
+			}
+			if(document.getElementById("aid").value!=""&&document.getElementById("ad").value!=""&&document.getElementById("s").value!=""&&document.getElementById("p").value!="")
+			{
+				alert("details are add.");
+				return false;
+			}
+			return true;
+		}
+
+	</script>
+</head>
+<body bgcolor="brown">
+	<div class="m">
+		<footer class="m">
+			<span style="font-size: 15px;">
+				&nbsp;&nbsp;&nbsp;&nbsp;
+				<a href="https://web.whatsapp.com/" class="call">
+					&#9742;
+				</a>
+				&nbsp;&nbsp;:&nbsp;&nbsp;
+				<a href="https://web.whatsapp.com/" class="call">
+				+91 8178675901
+				</a>
+				&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;
+				<a href="https://www.google.com/gmail/" class="call">
+					&#9993;
+				</a>
+				&nbsp;&nbsp;:&nbsp;&nbsp;
+				<a href="https://www.google.com/gmail/" class="call">   				
+					dprinceakshat9@gmail.com
+				</a>
+   			</span>
+		</footer>
+	</div>
+	<h1 align="center">
+		<font color="cyan">WELCOME TO AUDITORIUM BOOKING SYSTEM</font> 
+	</h1>
+	<hr>
+	<p align="center">
+		<a href="adminauditoriumdetails.html">
+			<button onclick="Auditorium" class="a">
+				<b>Add Auditorium Details</b>
+			</button>
+		</a>
+		<a href="adminviewbooking.html">
+			<button onclick="View Auditorium Booking Details" class="a">
+				<b>View Auditorium Booking Details</b>
+			</button>
+		</a>
+		<a href="home.html">
+			<button onclick="Logout" class="a">
+				<b>Logout</b>
+			</button>
+		</a>
+	</p>
+<center>
+	<img src="auditorium.jpg" width="1000" height="400" border="2"/>
+</center>
+<center>
+	<form method="get">
+		<table bgcolor="white" class="c">
+			<tr>
+				<td class="b">
+					<p align="center">
+						<b>ADD AUDITORIUM DETAILS</b>
+					</p>
+					<br>
+					<br>
+					<form onsubmit="return(fun4());">
+					<center>
+						<label> Auditorium ID: </label>
+						<input type="text" id="aid">
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<br><br>
+						<label> Address: </label>
+						<input type="text" id="ad">
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<br><br>
+						<label> Seats: </label>
+						<input type="text" id="s">
+						&nbsp;
+						<br><br>
+						<label> Price: </label>
+						<input type="text" id="p">
+						&nbsp;
+						<br><br><br>
+						<button onclick="fun4()" class="k">Add</button>
+						&nbsp;&nbsp;&nbsp;&nbsp;
+						<button class="k">Reset</button>
+						<br><br><br>
+				    </center>
+				</td>
+			</tr>
+		</table>
+	</form>
+</center>
+<br><br><br>
+<div class="m">
+	<footer class="m">
+	<span style="font-size: 15px;">
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		&copy;2019 
+		<a href="home.html">
+			www.seminarhall.com
+		</a>
+		ALL RIGHTS RESERVED
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		DESIGNED AND DEVELOPED BY AKSHAT PAREEK
+	</span>
+</footer>
+</div>
+</body>
+</html>

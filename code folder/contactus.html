@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Us</title>
+	<style>
+		.p
+		{
+			color: blue;
+			font-size: 18px;
+			font-weight: bold;
+			font-family: arial;
+		}
+		.b
+		{
+			text-align: center;
+			padding-top: 30px;
+			padding-right: 30px;
+			color: purple;
+		}
+		.c
+		{
+			font-weight: bold;
+			padding-top: 6px;
+			padding-bottom: 6px;
+			padding-right: 10px;
+			padding-left: 10px;
+		}
+		.b:hover
+		{
+			background-color: pink;
+		}
+		.c:hover
+		{
+			background-color: blue;
+		}
+		.a:hover
+		{
+			color: red;
+		}
+		.a
+		{
+			padding-left: 97px;
+			padding-right: 97px;
+			padding-top: 8px;
+			padding-bottom: 8px;
+		}
+		.m
+		{
+			background-color: black;
+			color: white;
+			padding-top: 5px;
+			padding-bottom: 5px;
+			display: block;
+			width: 100%;
+			overflow: hidden;
+			height: 30px;
+		}
+		.call
+		{
+			color: white;
+		}
+	</style>
+	<script>
+		function fun1()
+		{
+			if (document.getElementById("name").value == "") 
+	         {
+	            alert("Please enter your name");
+	            document.getElementById("name").focus() ;
+	            return false;
+	         }
+	         var emailID = document.getElementById("email").value;
+			 atpos = emailID.indexOf("@");
+			 dotpos = emailID.lastIndexOf(".");       
+			 if (document.getElementById("email").value == "" || atpos < 1 || ( dotpos - atpos < 2 )) 
+			 {
+			    alert("Please enter correct email ID");
+			    document.getElementById("email").focus() ;
+				return false;
+			}
+			if (document.getElementById("phone").value == "") 
+        	 {
+            alert("Please enter phone no");
+            document.getElementById("phone").focus() ;
+            return false;
+        	 }
+        	 if(isNaN(document.getElementById("phone").value))
+        	 {
+        	 	alert("Please enter valid phone no");
+            document.getElementById("phone").focus() ;
+            return false;
+            }
+        	 if (document.getElementById("phone").value.length<10) 
+        	 {
+            alert("Please enter valid phone no");
+            document.getElementById("phone").focus() ;
+            return false;
+        	 }
+	         if (document.getElementById("address").value == "") 
+	         {
+	            alert("Please enter address");
+	            document.getElementById("address").focus() ;
+	            return false;
+	         }
+	         if (document.getElementById("subject").value == "") 
+	         {
+	            alert("Please enter subject");
+	            document.getElementById("subject").focus() ;
+	            return false;
+	         }
+	         if (document.getElementById("description").value == "") 
+	         {
+	            alert("Please enter description");
+	            document.getElementById("description").focus() ;
+	            return false;
+	         }				
+		return(true);
+		}
+	</script>
+	
+</head>
+<body bgcolor="brown">
+	<div class="m">
+		<footer class="m">
+			<span style="font-size: 15px;">
+				&nbsp;&nbsp;&nbsp;&nbsp;
+				<a href="https://web.whatsapp.com/" class="call">
+					&#9742;
+				</a>
+				&nbsp;&nbsp;:&nbsp;&nbsp;
+				<a href="https://web.whatsapp.com/" class="call">
+				+91 8178675901
+				</a>
+				&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;
+				<a href="https://www.google.com/gmail/" class="call">
+					&#9993;
+				</a>
+				&nbsp;&nbsp;:&nbsp;&nbsp
+				<a href="https://www.google.com/gmail/" class="call">   				
+					dprinceakshat9@gmail.com
+				</a>
+				
+   			</span>
+		</footer>
+	</div>
+	 <p align="center">
+			<a href="home.html">
+				<button onclick="button" class="a">
+					<b>Home</b>
+				</button>
+			</a>
+			<a href="aboutus.html">
+				<button onclick="button" class="a">
+					<b>About Us</b>
+				</button>
+			</a>
+			<a href="contactus.html">
+				<button onclick="button" class="a">
+					<b>Contact us</b>
+				</button>
+			</a>
+			<a href="home.html">
+				<button onclick="Login" class="a">
+					<b>Login</b>
+				</button>
+			</a>
+		</p>
+	<hr>
+	<h1 align="center">Contact Us</h1>
+	<hr>
+	<p class="p">Contact us about anything related to our survices.
+	<br>
+	<br>
+	We'll do our best to get back to you soon as possible.
+</p>
+<br>
+<form onsubmit="return(fun1());">
+	<center>
+	<input type="text" align="center" size="30px" placeholder="Name" class="b" id="name" required/>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<input type="text" size="30px" placeholder="Email ID" class="b" id="email" required/>
+	<br>
+	<br>
+	<input type="digit"  align="center" size="30px" placeholder="Phone" maxlength="10" class="b" id="phone" required/>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<input type="text" size="30px" placeholder="Address" class="b" id="address" required />
+	<br>
+	<br>
+	<input type="text"  align="center" size="30px" placeholder="Subject" class="b" id="subject" required/>
+	<br>
+	<br>
+	<input type="text"  align="center" size="30px" placeholder="Description" class="b" id="description" required/>
+</center>
+<br>
+<br>
+	<center>
+		<button onclick="fun1()" class="c"><font size="5px"><center>SEND</center></font></button>
+	</center>
+</form>
+<br>
+<br>
+<br>
+<div class="m">
+	<footer class="m">
+	<span style="font-size: 15px;">
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		&copy;2019 
+		<a href="home.html">
+			www.seminarhall.com
+		</a>
+		ALL RIGHTS RESERVED
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		DESIGNED AND DEVELOPED BY AKSHAT PAREEK
+	</span>
+</footer>
+</div>
+</body>
+</html>

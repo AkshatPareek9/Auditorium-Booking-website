@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>REGISTRATION</title>
+	<style>
+		.a:hover
+		{
+			color: red;
+		}
+		.b
+		{
+			padding-left: 280px;
+			padding-right: 280px;
+			border-radius: 40px;
+		}
+		.c
+		{
+			border-radius: 50px;
+		}
+		.a
+		{
+			padding-left: 97px;
+			padding-right: 97px;
+			padding-top: 8px;
+			padding-bottom: 8px;
+		}
+		.m
+		{
+			background-color: black;
+			color: white;
+			padding-top: 5px;
+			padding-bottom: 5px;
+			display: block;
+			width: 100%;
+			overflow: hidden;
+			height: 30px;
+		}
+		.call
+		{
+			color: white;
+		}
+		.x
+		{
+			background-color: skyblue;
+		}
+	</style>
+	<script>
+		function fun1()
+		{
+			if (document.getElementById("user").value == "") 
+	         {
+	            alert("Please enter userID");
+	            document.getElementById("user").focus() ;
+	            return false;
+	         }
+	         var emailID = document.getElementById("email").value;
+			 atpos = emailID.indexOf("@");
+			 dotpos = emailID.lastIndexOf(".");       
+			 if (document.getElementById("email").value == "" || atpos < 1 || ( dotpos - atpos < 2 )) 
+			 {
+			    alert("Please enter correct email ID");
+			    document.getElementById("email").focus() ;
+				return false;
+			}
+			if (document.getElementById("name").value == "") 
+        	 {
+            alert("Please enter your name");
+            document.getElementById("name").focus() ;
+            return false;
+        	 }
+	         if (document.getElementById("pass").value == "") 
+	         {
+	            alert("Please enter your password");
+	            document.getElementById("pass").focus() ;
+	            return false;
+	         }
+	         if (document.getElementById("pass").value.length<8) 
+	         {
+	            alert("password must contain atleast 8 digits");
+	            document.getElementById("pass").focus() ;
+	            return false;
+	         }
+	         if (document.getElementById("conpass").value == "") 
+	         {
+	            alert("Please enter your confirm password");
+	            document.getElementById("conpass").focus() ;
+	            return false;
+	         }
+	         if (document.getElementById("conpass").value.length<8) 
+	         {
+	            alert("confirm password must contain atleast 8 digits");
+	            document.getElementById("conpass").focus() ;
+	            return false;
+	         }
+	         if(document.getElementById("pass").value != ""&&document.getElementById("conpass").value != "")
+	        { 
+	        	if (document.getElementById("conpass").value.length>=8&&document.getElementById("conpass").value.length>=8)
+	        	{ 
+	        	if(document.getElementById("pass").value !=document.getElementById("conpass").value)
+	         {
+	         	alert("Password mismatched");
+	            return false;
+	         }
+	     }
+	     }
+	         if (document.getElementById("mobile").value == "") 
+	         {
+	            alert("Please enter your mobile number");
+	            document.getElementById("mobile").focus() ;
+	            return false;
+	         }		
+	         if (isNaN(document.getElementById("mobile").value)) 
+	         {
+	            alert("Please enter a valid mobile number");
+	            document.getElementById("mobile").focus() ;
+	            return false;
+	         }	
+	         if (document.getElementById("mobile").value.length<10) 
+	         {
+	            alert("Please enter a valid mobile number");
+	            document.getElementById("mobile").focus() ;
+	            return false;
+	         }				
+		return(true);
+		}
+	</script>
+</head>
+<body bgcolor="brown">
+	<div class="m">
+		<footer class="m">
+			<span style="font-size: 15px;">
+				&nbsp;&nbsp;&nbsp;&nbsp;
+				<a href="https://web.whatsapp.com/" class="call">
+					&#9742;
+				</a>
+				&nbsp;&nbsp;:&nbsp;&nbsp;
+				<a href="https://web.whatsapp.com/" class="call">
+				+91 8178675901
+				</a>
+				&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;
+				<a href="https://www.google.com/gmail/" class="call">
+					&#9993;
+				</a>
+				&nbsp;&nbsp;:&nbsp;&nbsp
+				<a href="https://www.google.com/gmail/" class="call">   				
+					dprinceakshat9@gmail.com
+				</a>
+				
+   			</span>
+		</footer>
+	</div>
+	<h1 align="center">
+		<font color="cyan">WELCOME TO AUDITORIUM BOOKING SYSTEM</font> 
+	</h1>
+	<hr>
+	<p align="center">
+		<a href="home.html">
+			<button onclick="button" class="a">
+				<b>Home</b>
+			</button>
+		</a>
+		<a href="aboutus.html">
+			<button onclick="button" class="a">
+				<b>About Us</b>
+			</button>
+		</a>
+		<a href="contactus.html">
+			<button onclick="button" class="a">
+				<b>Contact us</b>
+			</button>
+		</a>
+		<a href="home.html">
+			<button onclick="Login" class="a">
+				<b>Login</b>
+			</button>
+		</a>
+	</p>
+<center>
+	<img src="auditorium.jpg" width="1000" height="350" border="2"/>
+</center>
+<center>
+<table border="2" bgcolor="white" class="c">
+	<tr>
+		<td class="b">
+			<form onsubmit="return(fun1());">
+				<center>
+					<p><b>Registration</b></p>
+				</center>
+				<p align="right">
+					<label> User ID </label>
+					<input type="text" name="user" class="x" id="user" maxlength="5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<br><br>
+					<label> Name </label>
+					<input type="text" name="text" class="x" id="name">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<br><br>
+					<label> Password </label>
+					<input type="Password" name="Password" class="x" id="pass" maxlength="8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<br><br>
+					<label> Confirm Password </label>
+					<input type="Password" name="confirm Password" class="x" id="conpass" maxlength="8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<br><br>
+					<label> Mobile Number </label>
+					<input type="digit" name="number" class="x" maxlength="10" id="mobile">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<br><br>
+					<label> Email id </label>
+					<input type="text" name="Email id" class="x" id="email">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<br><br>
+					<button onclick="fun1()">Submit</button>
+					<button>Reset</button>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+				</p>
+			</form>
+		</td>
+	</tr>
+</table>
+</center>
+<br>
+<br>
+<br>
+<div class="m">
+	<footer class="m">
+	<span style="font-size: 15px;">
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		&copy;2019 
+		<a href="home.html">
+			www.seminarhall.com
+		</a>
+		ALL RIGHTS RESERVED
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		DESIGNED AND DEVELOPED BY AKSHAT PAREEK
+	</span>
+</footer>
+</div>
+</body>
+</html>

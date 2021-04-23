@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>USER</title>
+	<style>
+		.a:hover
+		{
+			color: red;
+		}
+		.u:hover
+		{
+			color: white;
+			background-color: black;
+		}
+		.u
+		{
+			padding-bottom: 8px;
+			padding-right: 20px;
+			padding-top: 8px;
+			padding-left: 20px;
+			font-weight: bold;
+			font-size: 15px;
+		}
+		.b
+		{
+			padding-left: 350px;
+			padding-right: 350px;
+			border-radius: 40px;
+		}
+		.c
+		{
+			border-radius: 40px;
+		}
+		.a
+		{
+			padding-left: 97px;
+			padding-right: 97px;
+			padding-top: 8px;
+			padding-bottom: 8px;
+		}
+		.m
+		{
+			background-color: black;
+			color: white;
+			padding-top: 5px;
+			padding-bottom: 5px;
+			display: block;
+			width: 100%;
+			overflow: hidden;
+			height: 30px;
+		}
+		.call
+		{
+			color: white;
+		}
+		.x
+		{
+			background-color: skyblue;
+			padding-top: 5px;
+			padding-bottom: 5px;
+		}
+		.y
+		{
+			background-color: skyblue;
+			padding-top: 5px;
+			padding-bottom: 5px;
+		}
+	</style>
+	<script>
+		function fun1()
+		{
+			if(document.getElementById("user").value == " ")
+			{
+				alert("enter your username.");
+				document.getElementById("user").focus();
+				return false;
+			}
+			if(document.getElementById("pass").value == " ")
+			{
+				alert("enter your password.");
+				document.getElementById("pass").focus();
+				return false;
+			}
+			window.open("booking.html");
+			return(true);
+		}
+	</script>
+</head>
+<body bgcolor="brown">
+<div class="m">
+		<footer class="m">
+			<span style="font-size: 15px;">
+				&nbsp;&nbsp;&nbsp;&nbsp;
+				<a href="https://web.whatsapp.com/" class="call">
+					&#9742;
+				</a>
+				&nbsp;&nbsp;:&nbsp;&nbsp;
+				<a href="https://web.whatsapp.com/" class="call">
+				+91 8178675901
+				</a>
+				&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;
+				<a href="https://www.google.com/gmail/" class="call">
+					&#9993;
+				</a>
+				&nbsp;&nbsp;:&nbsp;&nbsp
+				<a href="https://www.google.com/gmail/" class="call">   				
+					dprinceakshat9@gmail.com
+				</a>
+				
+   			</span>
+		</footer>
+	</div>
+	<h1 align="center">
+		<font color="cyan">WELCOME TO AUDITORIUM BOOKING SYSTEM</font> 
+	</h1>
+	<hr>
+	<p align="center">
+		<a href="home.html">
+			<button onclick="button" class="a">
+				<b>Home</b>
+			</button>
+		</a>
+		<a href="aboutus.html">
+			<button onclick="button" class="a">
+				<b>About Us</b>
+			</button>
+		</a>
+		<a href="contactus.html">
+			<button onclick="button" class="a">
+				<b>Contact us</b>
+			</button>
+		</a>
+		<a href="home.html">
+			<button onclick="Login" class="a">
+				<b>Login</b>
+			</button>
+		</a>
+	</p>
+<center>
+	<img src="auditorium.jpg" width="1000" height="350" border="2"/>
+</center>
+<center>
+<table border="2" bgcolor="white" class="c">
+	<tr>
+		<td class="b">
+			<form onsubmit="return(fun1());">
+				<center>
+					<p><b>USER LOGIN</b></p>
+				</center>
+				<p align="right">
+					<label> User ID : </label>
+					<input type="text" placeholder="enter username" class="x" id="user" required />
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<br><br>
+					<label> Password : </label>
+					<input type="Password" placeholder="enter password" class="y" id="pass" required />
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<br><br>
+					<input type="checkbox" name="remember me">Remember me
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;					
+					<br><br>
+					<button onsubmit="fun1()" class="u" id="q">					
+							Login
+					</button>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<br>
+					<br>
+					Not a Member?
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<a href="signin.html"> Sign in </a>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			    </p>
+			</form>
+</td>
+</tr>
+</table>
+</center>
+<br>
+<br>
+<br>
+<div class="m">
+	<footer class="m">
+	<span style="font-size: 15px;">
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		&copy;2019 
+		<a href="home.html">
+			www.seminarhall.com
+		</a>
+		ALL RIGHTS RESERVED
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		DESIGNED AND DEVELOPED BY AKSHAT PAREEK
+	</span>
+</footer>
+</div>
+</body>
+</html>
