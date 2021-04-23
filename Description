@@ -1,0 +1,28 @@
+We have given a project to make a website on Auditorium and Seminar Hall booking system using HTML, CSS and JAVASCRIPT.
+We are making a website with four group members on the Auditorium and Seminar Hall booking system in which we have divided four modules:
+1.	HOME PAGE INCLUDING ABOUT US AND CONTACT US
+2.	ADMIN PAGE
+3.	USER LOGIN
+4.	BOOKING AND VIEW BOOKING REQUEST
+
+HOME PAGE 
+We are make a home page for our website where we have gave an option to user to open our website and click on login to log into their account.
+We also gave an option to admin to update and delete anything in the website.
+Next one is very important in the home page is that we gave a best option to every user to give their suggestion or feedback according to their behaviour towards our website.
+
+ADMIN PAGE
+Here in this firstly admin login to their ID and then two options are shown to admin:
+1.	Updating 
+2.	View bookings
+In updating, admin tell us the website about new hall details includes:
+ Auditorium ID, seats, cost and address
+In view bookings, admin can see the booked halls by user or we can say that admin has the access to view the booked halls of the user.
+
+USER LOGIN
+If a new user wants to login to our website then he has to create its new account by click on sign in and then he gave his details along with a username and a password.
+Then after creating account, user login to their account and start to book the halls according to their needs.
+Gallery is also available in every user account to gave a view of seminar halls.
+
+BOOKING AND VIEW BOOKING REQUEST
+User can book their halls which are available in their account and pay according to their cost.
+If a user booked any hall he has the right to view their booking status.
